@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="hello">水滴石穿</string>
+    <string name="true_button">true</string>
+    <string name="false_button">false</string>
+    <string name="pafu">自定义pafupafu</string>
+    <string name="next_button">下一题</string>
+    <string name="q1">下一题1</string>
+    <string name="q2">下一题2</string>
+    <string name="q3">下一题3</string>
+    <string name="q4">下一题4</string>
+    <string name="q5">下一题5</string>
+    <string name="q6">下一题6</string>
+    <string name="PREV">上一题</string>
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgment_toast">Cheating is wrong.</string>
+</resources>
