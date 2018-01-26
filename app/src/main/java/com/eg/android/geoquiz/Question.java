@@ -7,6 +7,13 @@ package com.eg.android.geoquiz;
  */
 
 public class Question {
+    /**
+     *参数
+     * mTextResId   题号
+     * mAnswer      答案
+     * mAnswerend   作答
+     *
+     */
     private int mTextResId;
     private boolean mAnswer;
     private boolean mAnswerend;
