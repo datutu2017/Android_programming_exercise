@@ -37,6 +37,11 @@ public class CrimeLab {
             Crime crime = new Crime();
             crime.setTitle("Crime#" + i);
             crime.setSolved(i % 2 == 0);
+            if (i % 3 == 0) {
+                crime.setRequiresPolice(0);
+            } else {
+                crime.setRequiresPolice(1);
+            }
             mCrimes.add(crime);
         }
     }
@@ -44,6 +49,8 @@ public class CrimeLab {
     public List<Crime> getCrimes() {
         return mCrimes;
     }
+
+    //根据uuid遍历集合找到对应条目
 
     public Crime getCrime(UUID id) {
         for (Crime crime : mCrimes) {

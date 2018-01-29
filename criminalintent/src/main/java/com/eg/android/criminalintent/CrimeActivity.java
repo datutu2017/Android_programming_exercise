@@ -1,12 +1,27 @@
 package com.eg.android.criminalintent;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 
+import java.util.UUID;
+
 public class CrimeActivity extends SingleFragmentActivity {
+    //定义静态常量 便于标识 调用
+    private static final String EXTRA_CRIME_ID =
+            "com.bignerdranch.android.criminalintent.crime_id";
+
+    public static Intent newIntent(Context context, UUID crimeID) {
+        Intent intent = new Intent(context, CrimeActivity.class);
+        intent.putExtra(EXTRA_CRIME_ID, crimeID);
+        return intent;
+    }
 
     @Override
     protected Fragment createFragment() {
-        return new CrimeFragment();
+//        return new CrimeFragment();
+        UUID crimeId = (UUID) getIntent().getSerializableExtra(EXTRA_CRIME_ID);
+        return CrimeFragment.newInstance(crimeId);
     }
 
 //    @Override
